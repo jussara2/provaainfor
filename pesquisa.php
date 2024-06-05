@@ -16,6 +16,7 @@
     $sql = "SELECT * FROM usuario where nome LIKE '%$pesquisa%'";//selecione toda a tabela usuario onde a coluna nome tenha um LIKE que filtre todas as letras qu e o usuário digita
     $dados = mysqli_query($conexao,$sql);
     
+    
     ?>
     <div class="container">
         <div class="row">

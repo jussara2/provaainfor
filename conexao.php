@@ -10,4 +10,5 @@ if($conexao = mysqli_connect($host,$user,$senha,$banco)){//faz a conexao coom o 
 else{
  //   echo"erro";
 }
+
 ?>
