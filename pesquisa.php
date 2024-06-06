@@ -71,15 +71,27 @@
                             </button>
                         </div>
                         <div class="modal-body">
-                            ...
+                            <form action="excluir.php" method="post">
+                        <p>Deseja realmente excluir<b id="nome_pessoa">Nome da pessoa</b> ?</p>
+                            
+                          </form>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Não</button>
+                            <input type ="" id="nome_pessoa" name="nome">
+                            <inp
                             <button type="button" class="btn btn-primary">Sim</button>
                         </div>
                         </div>
                     </div>
                     </div>
+                    <script>
+                           function pegar_dados(id,nome){
+                            document.getElementById("nome_pessoa").innerHTML = nome
+                            document.getElementById("nome_pessoa1"). value = nome
+                            document.getElementById("cod_pessoa"). value = id
+                           }
+                    </script>
 
                 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
                 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
